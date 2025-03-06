@@ -20,19 +20,30 @@ Before you start, ensure you have the following:
 * Familiarity with Markdown.
 * Pelican is a Python-based tool, ensure you have python installed.
   Install [Python](https://www.python.org/). (version 3 or later).
-* Most modern python installations come with pip pre-installed. To check if its available, run:
-* ```pip --version```
-If you get an error, that means it is not in your system. To install, run:
-  ```python -m ensurepip --default-pip```
+* Most modern python installations come with pip pre-installed. To check if its available, run: 
+  ```
+  pip --version
+  ```
+
+  * If you get an error, that means it is not in your system. To install, run:
+    ```
+    python -m ensurepip --default-pip
+    ```
 * To ensure you have the latest version of ``pip``, run:
-  ```pip install --upgrade pip```
+    ```
+    pip install --upgrade pip
+    ```
 
 * Install Pelican with Markdown support:
-```python -m pip install "pelican[markdown]"```
+  ```
+  python -m pip install "pelican[markdown]"
+  ```
 
 * Git is needed in order to store the website for version control and host it via GitHub Pages, to check if Git is installed, run:
-  ```git --version```
-  If it throws an error, download it from git-scm.com.
+    ```
+    git --version
+    ```
+    * If it throws an error, download it from git-scm.com.
 
  * Create an account on [GitHub](https://github.com).
  * Create a repository on GitHub. This is where the files are stored and also where the site will be hosted via GitHub Pages.
@@ -51,7 +62,9 @@ Etter emphasizes using a markup language rather than raw HTML because they make 
 
 #### Create a Pelican Project:
 In your current directory, run:
-``pelican-quickstart``
+  ```
+  pelican-quickstart
+  ```
 This will prompt you to set up the project, answer the following questions for Pelican to set up the site:
 * ``Where to create a new website``, press enter since you are already in the desired directory.
 * ```What is the website title```, enter a title.
@@ -69,46 +82,67 @@ This will prompt you to set up the project, answer the following questions for P
 
 #### Move your Markdown file into the content directory of the pelican project:
 
-`` mv resume.md content/``
+  ```
+  mv resume.md content/
+  ```
 
 Instead of manually styling HTML pages, we place our Markdown formatted resume inside the ``content/`` directory, following Etter's recommendation of using automated tools over manual formatting.
 
 #### Generate the static site:
-`` pelican content``
+  ``` 
+  pelican content
+  ```
 
 This command creates an ``output/`` folder containing the HTML files needed to display the site in your browser..
 
-Note that you will have to run ``pelican content`` every time you make a change to the resume and save it. ``Ctrl + S`` is the your best friend. Use this save shortcut everytime in your text editor.
+Note that you will have to run ``pelican content`` every time you make a change to the resume and save it. ``Ctrl + S`` is your best friend. Use this save shortcut everytime in your text editor.
 
 #### Preview the site locally:
-`` pelican --listen``
+  ```
+  pelican --listen
+  ```
 
 Open ``https://localhost:8000`` in your browser to view the resume!
 
 ### Step 3: Deploy the generated resume using GitHub pages
 
 #### Initialize a Git repository in the project directory:
-```
-git init
-git remote add origin https://github.com/yourusername/resume.git
-```
+  ```
+  git init
+  git remote add origin https://github.com/yourusername/resume.git
+  ```
 
 Create a new branch:
-``` git branch -M main```
+  ``` 
+  git branch -M main
+  ```
 
 Add the files you want to commit (upload) to the repository:
-``` git add . ``` or ```git add content/resume.md``` if later on you would like to commit any changes you made to the resume.
+  ``` 
+  git add . 
+  ``` 
+or if later on you would like to commit any changes you made to the resume:
+  ```
+  git add content/resume.md
+  ```
+ 
 
 Create a commit message:
-``` git commit -m "changes written here"```
+  ``` 
+  git commit -m "changes written here"
+  ```
 
 Push the commit to the main branch:
-```git push -u origin main```
+  ```
+  git push -u origin main
+  ```
 
 #### Deploy to github pages using gh-pages branch:
 
 Install ghp-import:
-```pip install ghp-import```
+  ```
+  pip install ghp-import
+  ```
 
 Publish the site:
 ```
@@ -119,9 +153,9 @@ git push origin gh-pages
 Go to your GitHub repository settings, navigate to the ``Pages`` section, and select the branch from which the site should be deployed. By default, this is usually set to ``gh-pages``, but if it's not, manually select ``gh-pages`` and save the changes.
 
 **You have successfully uploaded your resume online!**
-Access it at ```https://username.github.io/RepoName```
+Access it at ``https://username.github.io/RepoName``
 
-If you wish to make changes to the resume, push the changes to the ``main`` branch first and then run the ```ghp import``` commands again.
+If you wish to make changes to the resume, push the changes to the ``main`` branch first and then run the ``ghp-import`` commands again.
 
 
 By storing our project on GitHub, we ensure version control and the ability to revert mistakes. This follows Etter's recommendation of using a distributed version control system to improve collabration and maintain efficient documentation.
@@ -142,7 +176,7 @@ By storing our project on GitHub, we ensure version control and the ability to r
 
 Markdown is a lightweight markup language that allows you to write formatted text in simple syntax. Raw HTML requires extensive tags for formatting but Markdown makes formatting easier and more readable.
 
-### I changed the Markdown version of my resume, so why don’t I see   the changes when I refresh the website in my browser?
+### I changed the Markdown version of my resume but I can't see the changes when I refresh the website in my browser?
 
 If you updated the markdown resume file but don't see any changes on your website, 
 Try the following:
@@ -156,8 +190,7 @@ Try the following:
 ## Credits
 [_Andrew Etter's Modern Technical Writing_](https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS)
 
-My team members 
-``Doomsday Killers`` :  Mohammad Adnan Malik | Daniel Gorban
+My team members - ``Doomsday Killers`` :  Mohammad Adnan Malik | Daniel Gorban
   
 
   
