@@ -74,12 +74,12 @@ This will prompt you to set up the project, answer the following questions for P
 * ``Who is the author of the website``, enter your name or alias.
 * Set your language and when prompted for a URL prefix, enter ``Y``.
 * URL prefix: ```https://username.github.io/repoName```
-  where ``username`` is the name of your github account and ``example`` is the name of your github repository.
+  where ``username`` is the name of your github account and ``repoName`` is the name of your github repository.
 * Press enter on the next few prompts that come up until you reach ``Generate a tasks.py?Makefile``, press `Y` for that.
 * Since we will be uploading the website via Github pages, just press enter on every prompt that comes up until you reach ``Upload using GitHub Pages?``, where you type ``Y``.
 * If this is your personal page, type yes.
 
-**Congratulations, you have successfully set up a pelican project**.
+**Congratulations, you have successfully set up a pelican project!**
 
 
 
