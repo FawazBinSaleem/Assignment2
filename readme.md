@@ -19,7 +19,7 @@ Before you start, ensure you have the following:
 * Basic understanding of terminal commands like ``cd``, ``mkdir``, ``mv``.
 * Familiarity with Markdown.
 * Pelican is a Python-based tool, ensure you have python installed.
-  Install [Python](https://www.python.org/). (version 3 or later).
+  Install [Python](https://www.python.org/) (version 3 or later).
 * Most modern python installations come with pip pre-installed. To check if its available, run: 
   ```
   pip --version
@@ -43,7 +43,7 @@ Before you start, ensure you have the following:
     ```
     git --version
     ```
-    * If it throws an error, download it from git-scm.com
+    * If it throws an error, download it from [git-scm.com](https://git-scm.com/).
 
  * Create an account on [GitHub](https://github.com).
  * Create a repository on GitHub. This is where the files are stored and also where the site will be hosted via GitHub Pages.
@@ -196,6 +196,3 @@ Try the following:
 [_Andrew Etter's Modern Technical Writing_](https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS)
 
 My team members - ``Doomsday Killers`` :  Mohammad Adnan Malik | Daniel Gorban
-  
-
-  
