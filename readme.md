@@ -51,9 +51,12 @@ Before you start, ensure you have the following:
 ## Instructions
 ### Step 1: Format a Resume in Markdown
 Open Visual Studio Code and create a new folder using the in-built terminal, you can pull up the terminal with the ``Ctrl + ` `` shortcut. 
+
 Navigate into the directory using ``cd`` and create a new folder by running: 
 ``mkdir myResume``
+
 Navigate into the folder you just created and create a Markdown file with the extension ``.md``, for example: ``resume.md``
+
 Open the file on VS Code and start working on the resume, if you want a live preview of how the markdown text would be rendered, bring up the preview with the ``Ctrl + Shift + V `` shortcut.
 
 
@@ -153,6 +156,7 @@ git push origin gh-pages
 Go to your GitHub repository settings, navigate to the ``Pages`` section, and select the branch from which the site should be deployed. By default, this is usually set to ``gh-pages``, but if it's not, manually select ``gh-pages`` and save the changes.
 
 **You have successfully uploaded your resume online!**
+
 Access it at ``https://username.github.io/RepoName``
 
 If you wish to make changes to the resume, push the changes to the ``main`` branch first and then run the ``ghp-import`` commands again.
@@ -178,7 +182,8 @@ Markdown is a lightweight markup language that allows you to write formatted tex
 
 ### I changed the Markdown version of my resume but I can't see the changes when I refresh the website in my browser?
 
-If you updated the markdown resume file but don't see any changes on your website, 
+If you updated the markdown resume file but don't see any changes on your website,
+
 Try the following:
 
 * Run ``pelican content`` in the terminal to rebuild your static files.
