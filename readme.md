@@ -18,8 +18,8 @@ Before you start, ensure you have the following:
 * Access to a terminal and a text editor like [Visual Studio Code](https://code.visualstudio.com/).
 * Basic understanding of terminal commands like ``cd``, ``mkdir``, ``mv``.
 * Familiarity with Markdown.
-* Pelican is a Python-based tool, ensure you have python installed.
-  Install [Python](https://www.python.org/) (version 3 or later).
+* Pelican is a Python-based tool, ensure you have [Python](https://www.python.org/) installed (version 3.00 or later).
+  
 * Most modern python installations come with pip pre-installed. To check if its available, run: 
   ```
   pip --version
