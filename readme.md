@@ -25,11 +25,11 @@ Before you start, ensure you have the following:
   pip --version
   ```
 
-  * If you get an error, that means it is not in your system. To install, run:
+  * If you get an error, that means it is not in your system. To install:
     ```
     python -m ensurepip --default-pip
     ```
-* To ensure you have the latest version of ``pip``, run:
+* To ensure you have the latest version of ``pip`` :
     ```
     pip install --upgrade pip
     ```
@@ -39,11 +39,11 @@ Before you start, ensure you have the following:
   python -m pip install "pelican[markdown]"
   ```
 
-* Git is needed in order to store the website for version control and host it via GitHub Pages, to check if Git is installed, run:
+* Git is needed in order to store the website for version control and host it via GitHub Pages, to check if Git is installed:
     ```
     git --version
     ```
-    * If it throws an error, download it from git-scm.com.
+    * If it throws an error, download it from git-scm.com
 
  * Create an account on [GitHub](https://github.com).
  * Create a repository on GitHub. This is where the files are stored and also where the site will be hosted via GitHub Pages.
@@ -64,7 +64,7 @@ Etter emphasizes using a markup language rather than raw HTML because they make 
 ### Step 2: Set up Pelican
 
 #### Create a Pelican Project:
-In your current directory, run:
+In your current directory:
   ```
   pelican-quickstart
   ```
