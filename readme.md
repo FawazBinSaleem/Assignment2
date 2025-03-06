@@ -98,7 +98,7 @@ Instead of manually styling HTML pages, we place our Markdown formatted resume i
 
 This command creates an ``output/`` folder containing the HTML files needed to display the site in your browser..
 
-Note that you will have to run ``pelican content`` every time you make a change to the resume and save it. ``Ctrl + S`` is your best friend. Use this save shortcut everytime in your text editor.
+Note that you will have to run ``pelican content`` every time you make a change to the resume and save it. ``Ctrl + S`` is your best friend. Use this save shortcut every time in your text editor.
 
 #### Preview the site locally:
   ```
@@ -162,7 +162,7 @@ Access it at ``https://username.github.io/RepoName``
 If you wish to make changes to the resume, push the changes to the ``main`` branch first and then run the ``ghp-import`` commands again.
 
 
-By storing our project on GitHub, we ensure version control and the ability to revert mistakes. This follows Etter's recommendation of using a distributed version control system to improve collabration and maintain efficient documentation.
+By storing our project on GitHub, we follow Etter's recommendations for modern technical documentation. Using Git as a version control system ensures that our changes can be tracked, mistakes can be reversed and multiple collaborators can work on the same project simultaneously.
 
 ## Further resources/readings
 [Pelican Documentation](https://docs.getpelican.com/en/latest/)
@@ -180,7 +180,7 @@ By storing our project on GitHub, we ensure version control and the ability to r
 
 Markdown is a lightweight markup language that allows you to write formatted text in simple syntax. Raw HTML requires extensive tags for formatting but Markdown makes formatting easier and more readable.
 
-### I changed the Markdown version of my resume but I can't see the changes when I refresh the website in my browser?
+### I updated my Markdown Resume, but why can't I see the changes on my website?
 
 If you updated the markdown resume file but don't see any changes on your website,
 
