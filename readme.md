@@ -2,7 +2,7 @@
 
 ## Introduction
 This Readme provides a step-by-step guide to formatting, generating and hosting a resume on a static site generator.
-This guide is intended for individuals who have little to no experience with static site generators, forges and Markdown. While there are many different static site generators and Forges, for the purposes of this demonstration, we will be using **Pelican** and **Git/GitHub**
+This guide is intended for individuals who have little to no experience with static site generators, forges and Markdown. While there are many different static site generators and Forges, for the purposes of this demonstration, we will be using **Pelican** and **Git/GitHub**.
 
 At the end of this guide, you should be able to:
 * Write a resume using Markdown.
@@ -25,10 +25,10 @@ Before you start, ensure you have the following:
   pip --version
   ```
 
-  * If you get an error, that means it is not in your system. To install:
-    ```
-    python -m ensurepip --default-pip
-    ```
+* If you get an error, that means it is not in your system. To install:
+  ```
+  python -m ensurepip --default-pip
+  ```
 * To ensure you have the latest version of ``pip`` :
     ```
     pip install --upgrade pip
@@ -53,7 +53,9 @@ Before you start, ensure you have the following:
 Open Visual Studio Code and create a new folder using the in-built terminal, you can pull up the terminal with the ``Ctrl + ` `` shortcut. 
 
 Navigate into the directory using ``cd`` and create a new folder by running: 
-``mkdir myResume``
+```
+mkdir myResume
+```
 
 Navigate into the folder you just created and create a Markdown file with the extension ``.md``, for example: ``resume.md``
 
@@ -149,6 +151,7 @@ Install ghp-import:
 
 Publish the site:
 ```
+pelican content -s publishconf.py
 ghp-import output -b gh-pages
 git push origin gh-pages
 ```
@@ -188,11 +191,16 @@ Try the following:
 
 * Run ``pelican content`` in the terminal to rebuild your static files.
 * Ensure the Markdown file is in the correct directory ``content/resume.md``
+
+### Do I need prior coding experience to use Markdown and static site generators?
+
+You don't need prior coding experience for building a static site using Markdown. Markdown is designed to be human readable and static site generators handle all of the coding part for you!
+
     
 
 
 
 ## Credits
-[_Andrew Etter's Modern Technical Writing_](https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS)
+* [_Andrew Etter's Modern Technical Writing_](https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS)
 
-My team members - ``Doomsday Killers`` :  Mohammad Adnan Malik | Daniel Gorban
+* My team members - ``Doomsday Killers`` :  ***Mohammad Adnan Malik*** | ***Daniel Gorban***
