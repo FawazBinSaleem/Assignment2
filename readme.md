@@ -61,6 +61,13 @@ Navigate into the folder you just created and create a Markdown file with the ex
 
 Open the file on VS Code and start working on the resume, if you want a live preview of how the markdown text would be rendered, bring up the preview with the ``Ctrl + Shift + V `` shortcut.
 
+Pelican requires the following metadata at the top of your Markdown file:
+  ```
+  Title: [Enter a title]
+  Date: [Enter a date]
+  Category: [Enter a category]
+  ```
+
 
 Etter emphasizes using a markup language rather than raw HTML because they make documentation simpler and easier to maintain. By using markdown, we are following his principle of minimizing complexity while improving collaboration across different platforms.
 ### Step 2: Set up Pelican
